@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63E151DD-00A1-4B54-B8B2-E940657084F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VirtualAssistant</RootNamespace>
+    <AssemblyName>VirtualAssistant</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirCondition.Designer.cs">
+      <DependentUpon>AirCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutomaticFeeder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutomaticFeeder.Designer.cs">
+      <DependentUpon>AutomaticFeeder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyPlan.Designer.cs">
+      <DependentUpon>DailyPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESHOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESHOP.Designer.cs">
+      <DependentUpon>ESHOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RouteInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouteInformation.Designer.cs">
+      <DependentUpon>RouteInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShoeAvailability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShoeAvailability.Designer.cs">
+      <DependentUpon>ShoeAvailability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShoeCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShoeCase.Designer.cs">
+      <DependentUpon>ShoeCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacuum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacuum.Designer.cs">
+      <DependentUpon>Vacuum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WashingMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WashingMachine.Designer.cs">
+      <DependentUpon>WashingMachine.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AirCondition.resx">
+      <DependentUpon>AirCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutomaticFeeder.resx">
+      <DependentUpon>AutomaticFeeder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyPlan.resx">
+      <DependentUpon>DailyPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESHOP.resx">
+      <DependentUpon>ESHOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RouteInformation.resx">
+      <DependentUpon>RouteInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShoeAvailability.resx">
+      <DependentUpon>ShoeAvailability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShoeCase.resx">
+      <DependentUpon>ShoeCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacuum.resx">
+      <DependentUpon>Vacuum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WashingMachine.resx">
+      <DependentUpon>WashingMachine.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aircondition.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aircondition1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\washingmachine.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sneaker.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightbulb.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vacuum.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aircondition2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airconditioner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airconditioner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bathroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airflow.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airflow2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airflow21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermansh.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yujh.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afygransh.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\afigransi.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\automath.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emptyshoecase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nikeblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adidasredblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asicsblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filashoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anthrakishoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jordansshoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rebookblackwhiteshoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\working.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wedding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exercise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nightclub.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badweather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walking2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knob2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knob45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtualassistantrobot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtualassistant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtualassistantrob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dailyplan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appliances.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dailyplan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paw2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valogo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\varobanxious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livingroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidsbedroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catsymbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dogsymbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waterdispenser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fooddispenser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caricon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tramicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beachcar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beachfeetcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafeteriacar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafeteriacarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinemacar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinemacarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gymcar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gymcarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gymfeetcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\librarycar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\librarycarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libraryfeetcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mallcar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mallcarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partycar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partycarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pianocar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pianocarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurantcar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurantcarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supermarketcar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supermarketcarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theatrecar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theatrecarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unicar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unicarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unifeetcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workcar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workcarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workfeetcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gymfeet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pianotram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restauranttram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supermarkettram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theatretram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unifeet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workfeet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beachfeet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafeteriatram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinematram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libraryfeet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partytram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beachcarcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mallfeet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mallfeetcoffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bathroom0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bathroom1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bathroom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bathroom3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garage0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garage2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garage3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidsbedroom0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidsbedroom1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidsbedroom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidsbedroom3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livingroom0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livingroom1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livingroom2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livingroom3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knobcotton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knobcurtains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knobeco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knobsensitive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knobsynthetics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knobwool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formal1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formal2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formal3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formal4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\night1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\night2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weather3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airforce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeezys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adiddasslipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hikingshoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leathershoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sneakerbw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackshoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chukkaboots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watershoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aquabeach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flipflop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nikeflipflop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formalshoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oxfordshoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gucciflipflops.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guccislippers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partyshoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uggslipper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtualassistantrob1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtualassistanthelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtualassistanthelpglossy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtualassistanthelppressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtualassistanthelppressed1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
